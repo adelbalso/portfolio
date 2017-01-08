@@ -1,0 +1,111 @@
+primaryColor = #FFFEFD
+fontColor = #555
+bgColor = #fff
+bgColorDark = #eee
+linkColor = fontColor
+calloutColor = #FF9376
+
+buffer = 12px
+
+test()
+  border 1px solid blue !important
+  
+transform(value)
+  -webkit-transform value
+  -moz-transform    value
+  -ms-transform     value
+  -o-transform      value
+  transform         value
+  
+animation(value)
+  -webkit-animation value
+  -moz-animation    value
+  -o-animation      value
+  animation         value
+
+p,div,h1,h2,h3,h4,h5,h6
+  color fontColor
+
+html
+  height 100%
+  margin 0 !important
+  background bgColor
+  font-family "Work Sans", "Helvetica Neue", Helvetica, sans-serif
+
+.content
+  padding buffer*4 buffer*6
+  animation(fadeInUp .5s ease-in-out)
+
+a
+  text-decoration none
+  color linkColor
+  &:hover
+    color calloutColor
+
+ul
+  list-style-type none
+  margin 0
+  padding 0
+
+.nav
+  padding buffer*4 buffer*6
+  .navTitle
+    display inline-block
+  .brand
+    display inline-block
+    color fontColor
+    font-size 24px
+    a
+      border-bottom none 
+  .navLinks
+    float right
+    display inline-block
+    margin 0
+    .navLink
+      display inline-block
+      padding 0 buffer
+
+.active
+  border-bottom 3px solid calloutColor
+  color calloutColor
+
+.calloutText
+  position relative
+  &:after
+    content ' '
+    position absolute
+    bottom 2px
+    left 0px
+    right 0px
+    height 13px
+    background alpha(calloutColor, .2)
+    
+
+.Home
+  h1
+    font-size 60px
+    line-height 80px
+
+
+.Contact
+  .contactOption
+    margin-bottom buffer
+
+
+
+@-webkit-keyframes fadeInUp {
+  0%   { opacity: 0; transform: translate3d(0,10px,0); }
+  100% { opacity: 1; transform: translate3d(0,0px,0); }
+}
+@-moz-keyframes fadeInUp {
+  0%   { opacity: 0; transform: translate3d(0,10px,0); }
+  100% { opacity: 1; transform: translate3d(0,0px,0); }
+}
+@-o-keyframes fadeInUp {
+  0%   { opacity: 0; transform: translate3d(0,10px,0); }
+  100% { opacity: 1; transform: translate3d(0,0px,0); }
+}
+@keyframes fadeInUp {
+  0%   { opacity: 0; transform: translate3d(0,10px,0); }
+  100% { opacity: 1; transform: translate3d(0,0px,0); }
+}
