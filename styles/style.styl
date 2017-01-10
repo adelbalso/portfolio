@@ -3,7 +3,7 @@ fontColor = #555
 fontColorLight = #aaa
 bgColor = #fff
 bgColorDark = #eee
-linkColor = fontColor
+linkColor = primaryColor
 calloutColor = #823ce2
 
 buffer = 12px
@@ -46,7 +46,7 @@ a
   text-decoration none
   color linkColor
   &:hover
-    color calloutColor
+    border-bottom 3px solid linkColor
 
 ul
   list-style-type none
@@ -126,8 +126,8 @@ ul
     position relative
     z-index 100
     width 70%
-    font-size 60px
-    line-height 80px
+    font-size 3vw
+    line-height 4vw
   
   @media only screen and (max-width: 1200px)
     .profilePhoto
