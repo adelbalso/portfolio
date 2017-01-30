@@ -7,6 +7,8 @@ linkColor = primaryColor
 calloutColor = #823ce2
 
 buffer = 12px
+windowHeight = calc(100vh - 124px)
+time = 1s
 
 test()
   border 1px solid blue !important
@@ -23,12 +25,20 @@ transform(value)
   -ms-transform     value
   -o-transform      value
   transform         value
-  
+
+shadow()
+  -webkit-box-shadow 0px 0px 52px 16px rgba(0,0,0,0.12)
+  -moz-box-shadow 0px 0px 52px 16px rgba(0,0,0,0.12)
+  box-shadow 0px 0px 52px 16px rgba(0,0,0,0.12)
+
 animation(value)
   -webkit-animation value
   -moz-animation    value
   -o-animation      value
   animation         value
+
+*
+  box-sizing border-box
 
 p,div,h1,h2,h3,h4,h5,h6
   color fontColor
@@ -40,9 +50,10 @@ html, body, #app, .appWrapper
   font-family "Work Sans", "Helvetica Neue", Helvetica, sans-serif
 
 .content
-  height 100%
+  display block
+  height windowHeight
   padding buffer*4 buffer*6
-  animation(fadeInUp .5s ease-in-out)
+  animation(fadeInUp time ease-in-out)
   
   @media only screen and (max-width: 750px)
     padding buffer*2 buffer*3 !important
@@ -52,6 +63,9 @@ a
   color linkColor
   &:hover
     border-bottom 3px solid linkColor
+
+.secondary
+  color #888
 
 ul
   list-style-type none
@@ -94,6 +108,12 @@ ul
       margin-top buffer*2
       float none
 
+.dividerLine
+  display block
+  height 3px
+  width 40px
+  background #ccc
+
 .active
   border-bottom 3px solid calloutColor
   color calloutColor
@@ -109,36 +129,79 @@ ul
   //   right 0px
   //   height 13px
   //   background alpha(calloutColor, .5)
-    
+
+a.button
+  display inline-block
+  transition()
+  border 4px solid primaryColor
+  padding buffer buffer*2
+  cursor pointer
+
+.calloutSection
+  background primaryColor
+  padding buffer*12 0
+  color white
+  text-align center
+  height 100vh
+  display flex
+  align-items center
+  justify-content center
+  h1
+    font-size 60px      
+    margin 0
+  h1,h2,h3,h4,h5,h6,p,div,a,button
+    color white
+  a.button
+    margin-top buffer*6
+    border 4px solid white
+    font-size 32px
+    font-weight 100
+    &:hover
+      background white
+      color primaryColor
 
 .Home
+  .homeContent
+    position relative
+    padding-left buffer*6
   .profilePhoto
-    position fixed
+    position absolute
     z-index 10
-    right 0
-    top 124px
+    right buffer*6
     bottom buffer*4
-    right buffer*4
-    width 50%
-    background-image linear-gradient(to right, alpha(white,.8), alpha(white,.7)), url('/images/adb_bg.jpg')
+    width 60%
+    height windowHeight
+    background-image linear-gradient(to right, alpha(white,.75), alpha(white,.6)), url('/images/adb_bg.jpg')
     background-size cover
     background-position center center
-    animation(fadeInRight .5s ease-in-out)
+    animation(fadeInRight time ease-in-out)
   .profileText
+    animation(fadeInUp time ease-in-out)
     overflow hidden
     position relative
     z-index 100
-    width 65%
-    margin-bottom 10%
+    width 50%
+    display flex
+    align-items center
+    justify-content center
+    height windowHeight
     h1
       font-size 3vw
       line-height 4.5vw
+      &:first-of-type
+        margin-top 0
+    a:hover
+      border-bottom 6px solid primaryColor
     
   .whatIDoSection
     position relative
     z-index 100
     background primaryColor
     padding buffer*4 0
+    width 100%
+    display flex
+    align-items center
+    justify-content center
     h1, h2,h3,h4,h5,h6, div, p
       color white
       text-align center
@@ -202,9 +265,12 @@ ul
     margin-top buffer*1.5
     margin-left 30px
     border-left 1px solid fontColorLight
+    transition()
     h1, h2,h3,h4,h5,h6, div, p
       color fontColorLight
+      transition()
     .stepNumber
+      transition()
       border 1px solid fontColorLight  
     .stepTitle
       position relative
@@ -232,13 +298,205 @@ ul
       .processStep
         margin-bottom buffer
       
-    &.activeStep
+    &:hover, &.activeStep
+      transition()
       border-left 1px solid calloutColor
       h1, h2,h3,h4,h5,h6, div, p
+        transition()
         color calloutColor
       .stepNumber
+        transition()
         border 1px solid calloutColor    
 
+.Work
+  .workHeader
+    font-size 60px
+    &.topHeader
+      text-align center
+      margin-top 0
+    &.subHeader
+      text-align center
+      margin buffer*20 0 buffer*10 0
+  .workCards
+    max-width 1000px
+    margin 0 auto
+    a
+      border-bottom none
+  .workCard    
+    cursor pointer
+    width 100%
+    height 400px
+    border 6px solid transparent
+    display inline-block
+    margin buffer*6 0
+    position relative
+    transition()
+    &:after
+      cursor pointer
+      content " "
+      background-image url("../images/workArrow.svg")
+      background-size contain
+      height 100px
+      width 200px
+      position absolute
+      top calc(50% - 50px)
+      left calc(50% - 100px)
+      opacity 0
+      transition()
+    &:hover
+      padding buffer*3
+      cursor pointer
+      &:after
+        opacity 1
+        transition()
+      .logo
+        transition()
+        opacity 0
+      transition()
+      border 6px solid primaryColor
+    .logo
+      transition()
+      height 100%
+      background-repeat no-repeat
+      background-size 300px
+      background-position center center
+      &.foodworksLogo
+        background-image url("https://s3.amazonaws.com/homemade-images/logoFullWhite.svg")
+        background-color #ef5442
+      &.farmigoLogo
+        background-image url("../images/logo_full_white.png")
+        background-color #de7a34
+      &.amicusLogo
+        background-image url("../images/amicusLogo.png")
+        background-color #001c3f
+  
+  .coverWrapper
+    height calc(100vh - 124px)
+  .photoArea, .titleArea
+    width 50%
+    height 100%
+  .photoArea
+    animation(fadeInUp time ease-in-out)
+    // background primaryColor
+    // background-image linear-gradient(to right, alpha(white,.4), alpha(white,.4)), url('/images/makers.jpg')
+    background-size cover
+    position relative
+    float left
+    // border-right 1px solid primaryColor
+    &:after 
+      bottom 30px
+      right -12px
+      border solid transparent
+      content " "
+      height 0
+      width 0
+      position absolute
+      pointer-events none
+      border-color rgba(130, 60, 226, 0)
+      border-top-color #823ce2
+      border-width 12px
+      margin-left -12px
+      animation(bounce time infinite ease-in-out)
+    &:before
+      content " "
+      position absolute
+      bottom 50px
+      right -2px
+      height 36px
+      width 4px
+      background primaryColor
+    .coverPhoto
+      shadow()
+      position absolute
+      right -10%
+      background-size contain
+      background-repeat no-repeat
+      border-radius 7px
+      &.fwPhoto
+        top calc(50% - 310px)
+        width 856px
+        height 571px
+        background-image url('/images/fwCover.jpg')
+      &.farmigoPhoto
+        background-image url('/images/farmigoCover.jpg')
+        width 854px
+        height 500px
+        top calc(50% - 250px)
+      &.amicusPhoto
+        height 600px
+        top calc(50% - 320px)
+  .titleArea
+    animation(fadeInRight time ease-in-out)
+    display flex
+    align-items center
+    justify-content center
+    max-width 370px
+    margin 0 auto
+    .dividerLine
+      margin buffer*2 0
+    .titleAreaContent
+      position relative
+      left 5%
+    li
+      margin-bottom buffer
+    .workHeader
+      font-size 64px
+      color primaryColor
+      margin-left -2px
+      margin-top 0
+    .workLink
+      margin-top buffer
+    .workSubtitle
+      margin-top (buffer/2)
+    .workSubtitle, li
+      color #888
+      
+  .workShowcase
+    // background #f3f3f3
+    padding buffer*4 buffer*6
+    display block
+    text-align center
+    h1
+      margin buffer*8 0 buffer*14 0
+      line-height 60px
+    .workShowcaseImage
+      shadow()
+      display block
+      margin buffer*6 auto buffer*3 auto
+      max-width 100%
+      border-radius 6px
+      &.makerCard
+        background-image url('/images/fwMakerCard.jpg')
+        width 253px
+        height 272px
+        background-size contain
+        border-radius 0
+      &.makerProfile
+        background-image url('/images/fwMakerProfile.jpg')
+        background-size contain
+        background-repeat no-repeat
+        width 856px
+        height 746px
+      // &.onboardAnimation
+      &.callToolVideo
+        overflow hidden
+        max-width 1000px
+        video
+          width 100%
+          margin-top -51px
+          margin-bottom -5px
+      &.homepageVideo
+        max-width 1000px
+        video
+          margin-top 0
+          width 100%
+          margin-bottom -5px
+    .workShowcaseDescription
+      margin buffer*6 auto buffer*20 auto
+      line-height 30px
+      max-width 800px      
+    .animationImage
+      margin buffer*12 0
 
 .Contact
   .contactOption
@@ -264,18 +522,24 @@ ul
 }
 
 @-webkit-keyframes fadeInRight {
-  0%   { opacity: 0; transform: translate3d(100px,0,0); }
+  0%   { opacity: 0; transform: translate3d(20px,0,0); }
   100% { opacity: 1; transform: translate3d(0,0px,0); }
 }
 @-moz-keyframes fadeInRight {
-  0%   { opacity: 0; transform: translate3d(100px,0,0); }
+  0%   { opacity: 0; transform: translate3d(20px,0,0); }
   100% { opacity: 1; transform: translate3d(0,0px,0); }
 }
 @-o-keyframes fadeInRight {
-  0%   { opacity: 0; transform: translate3d(100px,0,0); }
+  0%   { opacity: 0; transform: translate3d(20px,0,0); }
   100% { opacity: 1; transform: translate3d(0,0px,0); }
 }
 @keyframes fadeInRight {
-  0%   { opacity: 0; transform: translate3d(100px,0,0); }
+  0%   { opacity: 0; transform: translate3d(20px,0,0); }
   100% { opacity: 1; transform: translate3d(0,0px,0); }
+}
+
+@keyframes bounce {
+  0% { transform: translate3d(0,0px,0) };
+  70% { transform: translate3d(0,-6px,0) };
+  100% { transform: translate3d(0,0px,0) };
 }

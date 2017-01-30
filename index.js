@@ -7,6 +7,9 @@ import About from './modules/About'
 import Process from './modules/Process'
 import Work from './modules/Work'
 import Contact from './modules/Contact'
+import Foodworks from './modules/Foodworks'
+import Farmigo from './modules/Farmigo'
+import Amicus from './modules/Amicus'
 
 render((
   <Router history={browserHistory}>
@@ -15,6 +18,9 @@ render((
       <Route path="/process" component={Process} />
       <Route path="/work" component={Work} />
       <Route path="/contact" component={Contact} />
+      <Route path="/foodworks" component={Foodworks} />
+      <Route path="/farmigo" component={Farmigo} />
+      <Route path="/amicus" component={Amicus} />
     </Route>
   </Router>
 ), document.getElementById('app'))

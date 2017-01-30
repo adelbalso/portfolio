@@ -6,7 +6,7 @@ export default React.createClass({
       <div className="content Process">
         <div className="processSteps">
 
-          <div className="stepWrapper gatherContextWrapper activeStep">
+          <div className="stepWrapper gatherContextWrapper">
             <div className="stepTitle">
               <div className="stepNumber">1</div>
               <h1 className="stepName">Gather Context</h1>
