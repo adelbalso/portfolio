@@ -12,7 +12,7 @@ import Farmigo from './modules/Farmigo'
 import Amicus from './modules/Amicus'
 
 render((
-  <Router history={browserHistory}>
+  <Router onUpdate={() => window.scrollTo(0, 0)} history={browserHistory}>
     <Route path="/" component={App}>
       <Route path="/about" component={About} />
       <Route path="/process" component={Process} />
