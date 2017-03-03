@@ -1,15 +1,20 @@
 import React from 'react'
+import Contact from './Contact'
 
 export default React.createClass({
   render () {
     return (
-      <div className="Work">
+      <div className="Work WorkInner">
 
         <div className="workWrapper farmigoWork">
           <div className="coverWrapper">
             <div className="photoArea">
               <div className="coverPhotoWrapper">
-                <div className="coverPhoto farmigoPhoto"></div>
+                <div className="glassPane" />
+                <div className="coverPhoto farmigoPhoto">
+                  <div className="glassPane" />
+                  <img src="/images/farmigoCover.jpg" />
+                </div>
               </div>
             </div>
 
@@ -23,35 +28,46 @@ export default React.createClass({
                 <ul>
                   <li>Design Management and Strategy</li>
                   <li>UX/UI Design</li>
+                  <li>User Research</li>
                 </ul>
               </div>
             </div>
           </div>
 
           <div className="workShowcase">
-            <h1>The atomic unit of this product is <span className="calloutText">the food business</span>.</h1>
-            <div className="workShowcaseImage makerCard"></div>
-            <div className="workShowcaseDescription">The card, as displayed in the directory</div>
-            <div className="workShowcaseImage makerProfile"></div>
-            <div className="workShowcaseDescription">The business profile page</div>
-          
-            <h1>How we <span className="calloutText">onboard food businesses</span> is key to building a healthy community.</h1>
-            <img className="workShowcaseImage" src="../images/fwOnboard1.jpg" />
-            <p className="workShowcaseDescription">We created a simple, 3-step onboarding flow.</p>
-            <img className="workShowcaseImage" src="../images/fwOnboardTags.gif" />
-            <p className="workShowcaseDescription">Being discovered is key, so we push businesses to tag themselves with search keywords.</p>
-            <img className="workShowcaseImage onboardAnimation" src="../images/onboardingAnimation.gif" />
-            <p className="workShowcaseDescription">Delightful animations - a tactic to combat dropoff.</p>
+
+            <h1>The design team's top priority was finding ways to boost <span className="calloutText">average order value</span> (AOV).</h1>
+            <p className="subWorkHeader">In other words, <b>how might we encourage our customers to spend more on their Farmigo groceries each week?</b></p>
+            
+            <h2><b>Tactic 1:</b> Gift with minimum purchase</h2>
+            <div className="workShowcaseImage">
+              <img src="/images/giftMin1.png" />
+              <img src="/images/giftMin2.png" />
+            </div>
+            <div className="workShowcaseDescription">We monitored how likely our users were to increase their overall spend if we incentivized them to make a minimum purchase.</div>
+            
+            <h2><b>Tactic 2:</b> Volume discounts</h2>
+            <div className="workShowcaseImage">
+              <img src="/images/volume1.png" />
+            </div>
+            <div className="workShowcaseDescription">We offered bulk savings on items directly from the item cards in the marketplace to encourage purchasing higher quanitites of individual items.</div>
+
+            <h2><b>Tactic 3:</b> Targeted product suggestions</h2>
+            <div className="workShowcaseImage">
+              <img src="/images/farmigoLanding.jpg" />
+              <img src="/images/farmigoCross.jpg" />
+            </div>
+            <div className="workShowcaseDescription">We promoted targeted suggestions across the user journey, from where they land in the market through product pages and at cehckout.</div>
+
+            <div className="workWrapupStatement">
+              <h2>There are just some examples of the many tactics we employed to boost AOV.</h2>
+              <p>All in all, we attempted about a dozen different tactics as part of the Design team's goal of boosting AOV.</p>
+              <img src="/images/farmigoIcon.svg" />
+            </div>
 
           </div>
 
-          <section className="calloutSection contactMe">
-            <div className="contactMeContent">
-              <h1>Let's chat?</h1>
-              <p>Thanks so much for browsing my work. If you liked it, I'd love to hear from you.</p>
-              <a className="button" href="mailto:a.delbalso@gmail.com">Say hello</a>
-            </div>
-          </section>
+          <Contact />
 
         </div>
 

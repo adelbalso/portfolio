@@ -5,12 +5,17 @@ export default React.createClass({
     return (
       <div className="Work">
 
-        <div className="workWrapper amicusWork">
+        <div className="workWrapper amicusWork WorkInner">
           <div className="coverWrapper">
             <div className="photoArea">
+              
               <div className="coverPhotoWrapper">
-                <img className="coverPhoto amicusPhoto" src="../images/Amicus2.jpg" />
+                <div className="coverPhoto amicusPhoto">
+                  <div className="glassPane" />
+                  <img className="coverPhoto" src="../images/Amicus2.jpg" />
+                </div>
               </div>
+
             </div>
 
             <div className="titleArea">

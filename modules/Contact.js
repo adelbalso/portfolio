@@ -3,20 +3,14 @@ import React from 'react'
 export default React.createClass({
   render() {
     return (
-      <div className="content Contact">
-        <div className="contactList">
-          <ul className="ContactOptions">
-            <li className="contactOption">
-              <a href='mailto:a.delbalso@gmail.com'>Email</a>
-            </li>
-            <li className="contactOption">
-              <a target="__blank" href='http://www.twitter.com/a_delbalso'>Twitter</a>
-            </li>
-            <li className="contactOption">
-              <a target="__blank" href='http://www.instagram.com/adelbalso'>Instagram</a>
-            </li>
-          </ul>
-        </div>
+      <div>
+        <section className="calloutSection contactMe">
+          <div className="contactMeContent">
+            <h1>Let's chat?</h1>
+            <p>Thanks so much for browsing my work. If you liked it, I'd love to hear from you.</p>
+            <a className="button" href="mailto:a.delbalso@gmail.com">Say hello</a>
+          </div>
+        </section>
       </div>
     )
   }

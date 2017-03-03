@@ -7,7 +7,7 @@ export default React.createClass({
       <div className="Work">
         <div className="content">
 
-          <h1 className="workHeader topHeader">Work</h1>
+          <h1 className="workHeader">Some of my work</h1>
 
           <div className="workCards">
             <Link to="/foodworks">
@@ -33,7 +33,7 @@ export default React.createClass({
             </Link>
           </div>
 
-          <h1 className="workHeader subHeader">Side Projects</h1>
+          { /* <h1 className="workHeader subHeader">Side Projects</h1>*/ }
 
         </div>
 

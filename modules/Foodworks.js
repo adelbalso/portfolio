@@ -3,13 +3,16 @@ import React from 'react'
 export default React.createClass({
   render () {
     return (
-      <div className="Work">
+      <div className="Work WorkInner">
 
         <div className="workWrapper foodworksWork">
           <div className="coverWrapper">
             <div className="photoArea">
               <div className="coverPhotoWrapper">
-                <div className="coverPhoto fwPhoto"></div>
+                <div className="coverPhoto fwPhoto">
+                  <div className="glassPane" />
+                  <img src="/images/fwCover.jpg" />
+                </div>
               </div>
             </div>
 
@@ -28,21 +31,32 @@ export default React.createClass({
                 </ul>
               </div>
             </div>
+
           </div>
 
           <div className="workShowcase">
             <h1>The atomic unit of this product is <span className="calloutText">the food business</span>.</h1>
-            <div className="workShowcaseImage makerCard"></div>
+            <div className="workShowcaseImage makerCard">
+              <img src="/images/fwMakerCard.jpg" />
+            </div>
             <div className="workShowcaseDescription">The card, as displayed in the directory</div>
-            <div className="workShowcaseImage makerProfile"></div>
+            <div className="workShowcaseImage makerProfile">
+              <img src="/images/fwMakerProfile.jpg" />
+            </div>
             <div className="workShowcaseDescription">The business profile page</div>
           
             <h1>How we <span className="calloutText">onboard food businesses</span> is key to building a healthy community.</h1>
-            <img className="workShowcaseImage" src="../images/fwOnboard1.jpg" />
+            <div className="workShowcaseImage">
+              <img className="workShowcaseImage" src="../images/fwOnboard1.jpg" />
+            </div>
             <p className="workShowcaseDescription">We created a simple, 3-step onboarding flow.</p>
-            <img className="workShowcaseImage" src="../images/fwOnboardTags.gif" />
+            <div className="workShowcaseImage">
+              <img className="workShowcaseImage" src="../images/fwOnboardTags.gif" />
+            </div>
             <p className="workShowcaseDescription">Being discovered is key, so we push businesses to tag themselves with search keywords.</p>
-            <img className="workShowcaseImage onboardAnimation" src="../images/onboardingAnimation.gif" />
+            <div className="workShowcaseImage">
+              <img className="workShowcaseImage onboardAnimation" src="../images/onboardingAnimation.gif" />
+            </div>
             <p className="workShowcaseDescription">Delightful animations - a tactic to combat dropoff.</p>
 
           </div>
