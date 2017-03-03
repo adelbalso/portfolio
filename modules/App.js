@@ -12,8 +12,8 @@ export default React.createClass({
           </div>
           <ul role="nav" className="navLinks">
             { /* <li className="navLink"><Link to="/about" activeClassName="active">About</Link></li> */}
-            <li className="navLink"><Link to="/process" activeClassName="active">Process</Link></li>
-            <li className="navLink"><Link to="/work" activeClassName="active">Work</Link></li>
+            { /* <li className="navLink"><Link to="/process" activeClassName="active">Process</Link></li> */}
+            { /* <li className="navLink"><Link to="/work" activeClassName="active">Work</Link></li> */}
             <li className="navLink"><Link to="/contact" activeClassName="active">Contact</Link></li>
           </ul>
         </div>
