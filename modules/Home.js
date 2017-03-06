@@ -7,7 +7,8 @@ export default React.createClass({
     return (
       <div className="Home">
         <div className="homeContent">
-          <div className="profilePhoto" />
+          <div className="profilePhoto">
+          </div>
           <div className="profileText">
             <div className="profileTextContent">
               <h1>Hello! I&#39;m Adrian Del Balso.</h1>
