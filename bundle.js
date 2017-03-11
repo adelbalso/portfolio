@@ -33178,8 +33178,9 @@
 	              _react2.default.createElement(
 	                'a',
 	                { target: '__blank', href: 'http://www.thefoodworks.com' },
-	                'the Foodworks.'
-	              )
+	                'the Foodworks'
+	              ),
+	              '.'
 	            )
 	          )
 	        )
@@ -34294,6 +34295,11 @@
 	                  "|"
 	                ),
 	                " NYC"
+	              ),
+	              _react2.default.createElement(
+	                "a",
+	                { target: "__blank", href: "http://www.amicushq.com" },
+	                "amicushq.com"
 	              ),
 	              _react2.default.createElement("div", { className: "dividerLine" }),
 	              _react2.default.createElement(

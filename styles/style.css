@@ -153,7 +153,7 @@ ul {
 }
 .calloutText {
   position: relative;
-  border-bottom: 3px solid rgba(130,60,226,0.8);
+  border-bottom: 3px solid #823ce2;
 }
 a.button {
   display: inline-block;
