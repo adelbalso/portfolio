@@ -81,8 +81,20 @@ html, body, #app, .appWrapper
 a
   text-decoration none
   color linkColor
+  position relative
+  &:after
+    content ' '
+    position absolute
+    bottom 0
+    left 0
+    width 0%
+    height 1px
+    background primaryColor
+    transition()
   &:hover
-    border-bottom 3px solid linkColor
+    &:after
+      width 100%
+      transition()
 
 .secondary
   color #888
@@ -108,6 +120,8 @@ ul
     font-size 24px
     a
       border-bottom none 
+      &:after
+        height 0
   .navLinks
     float right
     display inline-block
@@ -141,7 +155,7 @@ ul
 
 .calloutText
   position relative
-  border-bottom 6px solid alpha(calloutColor, .8)
+  border-bottom 3px solid alpha(calloutColor, .8)
   // &:after
   //   content ' '
   //   position absolute
@@ -154,9 +168,11 @@ ul
 a.button
   display inline-block
   transition()
-  border 4px solid primaryColor
+  border 3px solid primaryColor
   padding buffer buffer*2
   cursor pointer
+  &:after
+    height 0
 
 .calloutSection
   background primaryColor
@@ -173,7 +189,7 @@ a.button
     color white
   a.button
     margin-top buffer*6
-    border 4px solid white
+    border 3px solid white
     font-size 32px
     font-weight 100
     &:hover
@@ -214,14 +230,14 @@ a.button
     align-items center
     justify-content center
     height windowHeight
+    a:after
+      height 3px
     h1
       font-size 3vw
       line-height 4.5vw
       animation(profileTextColorIn 2s ease-in-out)
       &:first-of-type
         margin-top 0
-    a:hover
-      border-bottom 6px solid primaryColor
     @media only screen and (max-width: 750px)
       animation none
       h1
@@ -387,7 +403,8 @@ a.button
     max-width 700px
     margin 0 auto buffer*2 auto
     a
-      border-bottom none
+      &:after
+        height 0
   .workCard    
     cursor pointer
     width 100%

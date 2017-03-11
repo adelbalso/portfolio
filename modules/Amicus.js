@@ -24,6 +24,7 @@ export default React.createClass({
                 <p className="secondary">Our mission was to create a food system that&#39;s better for everyone, from farmers to eaters. As a grocery service, the design team&#39;s challenge was to create a beautiful food experience that is enabled by the digital product.</p>
 
                 <p className="workSubtitle">Lead Designer <span className="secondary">|</span> 2012 - 2014 <span className="secondary">|</span> NYC</p>
+                <a target="__blank" href="http://www.amicushq.com">amicushq.com</a>
                 <div className="dividerLine"></div>
                 <ul>
                   <li>Design Management and Strategy</li>

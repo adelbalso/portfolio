@@ -33270,7 +33270,7 @@
 	                      'React'
 	                    )
 	                  ),
-	                  ' \uD83D\uDCAA)'
+	                  ' \uD83D\uDCAA )'
 	                )
 	              ),
 	              _react2.default.createElement(
@@ -34011,16 +34011,6 @@
 	                  'li',
 	                  null,
 	                  'Product Strategy'
-	                ),
-	                _react2.default.createElement(
-	                  'li',
-	                  null,
-	                  'UX/UI Design'
-	                ),
-	                _react2.default.createElement(
-	                  'li',
-	                  null,
-	                  'User Research'
 	                )
 	              )
 	            )
@@ -34030,24 +34020,113 @@
 	          'div',
 	          { className: 'workShowcase' },
 	          _react2.default.createElement(
+	            'div',
+	            { className: 'workContext' },
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'As director of design, I was responsible for building out the design team, managing our process, and of course... designing! The design team covered the following functions of Farmigo\'s product organization:'
+	            ),
+	            _react2.default.createElement(
+	              'ul',
+	              { className: 'functions' },
+	              _react2.default.createElement(
+	                'li',
+	                { className: 'column-2-1' },
+	                _react2.default.createElement(
+	                  'h2',
+	                  { className: 'label' },
+	                  'Defining product candidates'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  { className: 'description' },
+	                  'Observing our users to identify product needs, as well as defining inventive ideas'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                { className: 'column-2-1' },
+	                _react2.default.createElement(
+	                  'h2',
+	                  { className: 'label' },
+	                  'User research'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  { className: 'description' },
+	                  'Monitoring user behavior and collecting feedback on ongoing design projects'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                { className: 'column-2-1' },
+	                _react2.default.createElement(
+	                  'h2',
+	                  { className: 'label' },
+	                  'UX/UI design'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  { className: 'description' },
+	                  'Creating everything from wireframes to mockups to interactive prototypes'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                { className: 'column-2-1' },
+	                _react2.default.createElement(
+	                  'h2',
+	                  { className: 'label' },
+	                  'Prototyping'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  { className: 'description' },
+	                  'Testing prototypes to better inform the build process'
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'h2',
+	              null,
+	              ' Here is an example of the design team\'s work:'
+	            )
+	          ),
+	          _react2.default.createElement(
 	            'h1',
 	            null,
-	            'The design team\'s top priority was finding ways to boost ',
+	            'One of the design team\'s top priorities was finding ways to boost ',
 	            _react2.default.createElement(
 	              'span',
 	              { className: 'calloutText' },
 	              'average order value'
 	            ),
-	            ' (AOV).'
+	            '.'
 	          ),
 	          _react2.default.createElement(
-	            'p',
-	            { className: 'subWorkHeader' },
+	            'h2',
+	            { className: '' },
 	            'In other words, ',
 	            _react2.default.createElement(
 	              'b',
 	              null,
 	              'how might we encourage our customers to spend more on their Farmigo groceries each week?'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'subWorkHeader' },
+	            _react2.default.createElement('img', { src: '/images/farmigoChart.svg' }),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'We identified over 20 tactics that could move that metric. In order to prioritize our efforts, we created a scoring criteria across multiple variables, which we used to build a backlog.'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'The following are some of the tactics we tested and implemented:'
 	            )
 	          ),
 	          _react2.default.createElement(
@@ -34111,24 +34190,31 @@
 	            'div',
 	            { className: 'workShowcaseDescription' },
 	            'We promoted targeted suggestions across the user journey, from where they land in the market through product pages and at cehckout.'
-	          ),
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'section',
+	          { className: 'calloutSection contactMe' },
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'workContext workWrapupStatement' },
+	            { className: 'contactMeContent' },
 	            _react2.default.createElement(
-	              'h2',
+	              'h1',
 	              null,
-	              'There are just some examples of the many tactics we employed to boost AOV.'
+	              'Want to learn more?'
 	            ),
 	            _react2.default.createElement(
 	              'p',
 	              null,
-	              'All in all, we attempted about a dozen different tactics as part of the Design team\'s goal of boosting AOV.'
+	              'If you\'re interested in working together, I\'d be happy to shed more light on this work.'
 	            ),
-	            _react2.default.createElement('img', { src: '/images/farmigoIcon.svg' })
+	            _react2.default.createElement(
+	              'a',
+	              { className: 'button', href: 'mailto:a.delbalso@gmail.com' },
+	              'Say hello'
+	            )
 	          )
-	        ),
-	        _react2.default.createElement(_Contact2.default, null)
+	        )
 	      )
 	    );
 	  }
@@ -34155,10 +34241,10 @@
 	  render: function render() {
 	    return _react2.default.createElement(
 	      "div",
-	      { className: "Work" },
+	      { className: "Work WorkInner" },
 	      _react2.default.createElement(
 	        "div",
-	        { className: "workWrapper amicusWork WorkInner" },
+	        { className: "workWrapper amicusWork" },
 	        _react2.default.createElement(
 	          "div",
 	          { className: "coverWrapper" },
