@@ -3,9 +3,9 @@ import React from 'react'
 export default React.createClass({
   render () {
     return (
-      <div className="Work">
+      <div className="Work WorkInner">
 
-        <div className="workWrapper amicusWork WorkInner">
+        <div className="workWrapper amicusWork">
           <div className="coverWrapper">
             <div className="photoArea">
               
