@@ -27,7 +27,7 @@ export default React.createClass({
                 <ul>
                   <li>Product Management and Strategy</li>
                   <li>UX/UI Design</li>
-                  <li>Frontend development - React.js + Stylus</li>
+                  <li>Frontend development - React + Stylus</li>
                 </ul>
               </div>
             </div>
@@ -35,17 +35,17 @@ export default React.createClass({
           </div>
 
           <div className="workShowcase">
+            <div className="workContext">
+              <p>I joined the small and scrappy Foodworks product team early. Our goal is to build a product roadmap that supports the company's mission of helping people start food businesses. I work closely with the CTO to build our product experiments, from definition to production code.</p>
+              <p>Because we are small, our process is extremely lean. We study an opportunity, whiteboard the UX, then jump straight to code. Our approach is to learn fast and iterate on the fly.</p>
+              <p>I design the UI as I build it.</p>
+              <img src="/images/fwMark.svg" />
+              <h2> Here is an example that sheds light on our approach to product:</h2>
+            </div>
+
             <h1>The atomic unit of this product is <span className="calloutText">the food business</span>.</h1>
-            <div className="workShowcaseImage makerCard">
-              <img src="/images/fwMakerCard.jpg" />
-            </div>
-            <div className="workShowcaseDescription">The card, as displayed in the directory</div>
-            <div className="workShowcaseImage makerProfile">
-              <img src="/images/fwMakerProfile.jpg" />
-            </div>
-            <div className="workShowcaseDescription">The business profile page</div>
-          
-            <h1>How we <span className="calloutText">onboard food businesses</span> is key to building a healthy community.</h1>
+            <h2>How we <b>onboard food businesses</b> is key to building a healthy community.</h2>
+
             <div className="workShowcaseImage">
               <img className="workShowcaseImage" src="../images/fwOnboard1.jpg" />
             </div>
@@ -59,12 +59,23 @@ export default React.createClass({
             </div>
             <p className="workShowcaseDescription">Delightful animations - a tactic to combat dropoff.</p>
 
+            <h2>Having compiled the components of this atomic unit, we then <b>present the food business</b> in various ways across the product.</h2>
+
+            <div className="workShowcaseImage makerCard">
+              <img src="/images/fwMakerCard.jpg" />
+            </div>
+            <div className="workShowcaseDescription">The card, as displayed in the directory</div>
+            <div className="workShowcaseImage makerProfile">
+              <img src="/images/fwMakerProfile.jpg" />
+            </div>
+            <div className="workShowcaseDescription">The business profile page</div>          
+
           </div>
 
           <section className="calloutSection contactMe">
             <div className="contactMeContent">
-              <h1>Let's chat?</h1>
-              <p>Thanks so much for browsing my work. If you liked it, I'd love to hear from you.</p>
+              <h1>Want to learn more?</h1>
+              <p>If you're interested in working together, I'd be happy to shed more light on this work.</p>
               <a className="button" href="mailto:a.delbalso@gmail.com">Say hello</a>
             </div>
           </section>

@@ -26,7 +26,8 @@ export default React.createClass({
                 <p className="workSubtitle">Director of Design <span className="secondary">|</span> 2014 - 2016 <span className="secondary">|</span> Brooklyn</p>
                 <div className="dividerLine"></div>
                 <ul>
-                  <li>Design Management and Strategy</li>
+                  <li>Design Management</li>
+                  <li>Product Strategy</li>
                   <li>UX/UI Design</li>
                   <li>User Research</li>
                 </ul>
@@ -59,7 +60,7 @@ export default React.createClass({
             </div>
             <div className="workShowcaseDescription">We promoted targeted suggestions across the user journey, from where they land in the market through product pages and at cehckout.</div>
 
-            <div className="workWrapupStatement">
+            <div className="workContext workWrapupStatement">
               <h2>There are just some examples of the many tactics we employed to boost AOV.</h2>
               <p>All in all, we attempted about a dozen different tactics as part of the Design team's goal of boosting AOV.</p>
               <img src="/images/farmigoIcon.svg" />

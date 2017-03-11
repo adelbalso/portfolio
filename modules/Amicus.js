@@ -28,6 +28,7 @@ export default React.createClass({
                 <ul>
                   <li>Design Management and Strategy</li>
                   <li>UX/UI Design</li>
+                  <li>Frontend development</li>
                 </ul>
               </div>
             </div>

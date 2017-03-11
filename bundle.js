@@ -27456,19 +27456,7 @@
 	            )
 	          )
 	        ),
-	        _react2.default.createElement(
-	          'ul',
-	          { role: 'nav', className: 'navLinks' },
-	          _react2.default.createElement(
-	            'li',
-	            { className: 'navLink' },
-	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: '/contact', activeClassName: 'active' },
-	              'Contact'
-	            )
-	          )
-	        )
+	        _react2.default.createElement('ul', { role: 'nav', className: 'navLinks' })
 	      ),
 	      this.props.children || _react2.default.createElement(_Home2.default, null)
 	    );

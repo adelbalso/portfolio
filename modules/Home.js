@@ -12,7 +12,7 @@ export default React.createClass({
           <div className="profileText">
             <div className="profileTextContent">
               <h1>Hello! I&#39;m Adrian Del Balso.</h1>
-              <h1>I&#39;m a <span className="calloutText">digital product designer</span> from Montreal living in Brooklyn.</h1>
+              <h1>I make <span className="calloutText">digital products</span> in Brooklyn.</h1>
               <h1>I am currently director of product at <a target="__blank" href="http://www.thefoodworks.com">the Foodworks.</a></h1>
             </div>
           </div>
@@ -24,7 +24,7 @@ export default React.createClass({
               <h1 className="whatIDoTitle">What I do</h1>
               <ul>
                 <li>
-                  <h2 className="listTitle">Product strategy</h2>
+                  <h2 className="listTitle">Product Management</h2>
                   <p>Working with customers and stakeholders to define the problem and opportunity landscape.</p>
                 </li>
                 <li>
@@ -38,6 +38,7 @@ export default React.createClass({
                 <li>
                   <h2 className="listTitle">Frontend Development</h2>
                   <p>HTML, CSS, and just enough javascript to keep the trains moving.</p>
+                  <p>(I built this site with <span className="react"><img src="../images/react.svg" /><b>React</b></span> 💪)</p>
                 </li>
                 <li className="last">
                   <h2 className="last listTitle">Team Management</h2>
