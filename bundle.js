@@ -33163,13 +33163,13 @@
 	            _react2.default.createElement(
 	              'h1',
 	              null,
-	              'I\'m a ',
+	              'I make ',
 	              _react2.default.createElement(
 	                'span',
 	                { className: 'calloutText' },
-	                'digital product designer'
+	                'digital products'
 	              ),
-	              ' from Montreal living in Brooklyn.'
+	              ' in Brooklyn.'
 	            ),
 	            _react2.default.createElement(
 	              'h1',
@@ -33207,7 +33207,7 @@
 	                _react2.default.createElement(
 	                  'h2',
 	                  { className: 'listTitle' },
-	                  'Product strategy'
+	                  'Product Management'
 	                ),
 	                _react2.default.createElement(
 	                  'p',
@@ -33255,6 +33255,22 @@
 	                  'p',
 	                  null,
 	                  'HTML, CSS, and just enough javascript to keep the trains moving.'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  '(I built this site with ',
+	                  _react2.default.createElement(
+	                    'span',
+	                    { className: 'react' },
+	                    _react2.default.createElement('img', { src: '../images/react.svg' }),
+	                    _react2.default.createElement(
+	                      'b',
+	                      null,
+	                      'React'
+	                    )
+	                  ),
+	                  ' \uD83D\uDCAA)'
 	                )
 	              ),
 	              _react2.default.createElement(
@@ -33752,7 +33768,7 @@
 	                _react2.default.createElement(
 	                  "li",
 	                  null,
-	                  "Frontend development - React.js + Stylus"
+	                  "Frontend development - React + Stylus"
 	                )
 	              )
 	            )
@@ -33761,6 +33777,35 @@
 	        _react2.default.createElement(
 	          "div",
 	          { className: "workShowcase" },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "workContext" },
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "I joined the small and scrappy Foodworks product team early. Our goal is to build a product roadmap that supports the company's mission of helping people start food businesses. I work closely with the CTO to build our product experiments, from definition to production code."
+	            ),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "Because we are small, our process is extremely lean. We study an opportunity, whiteboard the UX, then jump straight to code. Our approach is to learn fast and iterate on the fly."
+	            ),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              _react2.default.createElement(
+	                "b",
+	                null,
+	                "I design the UI as I build it."
+	              )
+	            ),
+	            _react2.default.createElement("img", { src: "/images/fwMark.svg" }),
+	            _react2.default.createElement(
+	              "h2",
+	              null,
+	              " Here is an example that sheds light on our approach to product:"
+	            )
+	          ),
 	          _react2.default.createElement(
 	            "h1",
 	            null,
@@ -33773,32 +33818,12 @@
 	            "."
 	          ),
 	          _react2.default.createElement(
-	            "div",
-	            { className: "workShowcaseImage makerCard" },
-	            _react2.default.createElement("img", { src: "/images/fwMakerCard.jpg" })
-	          ),
-	          _react2.default.createElement(
-	            "div",
-	            { className: "workShowcaseDescription" },
-	            "The card, as displayed in the directory"
-	          ),
-	          _react2.default.createElement(
-	            "div",
-	            { className: "workShowcaseImage makerProfile" },
-	            _react2.default.createElement("img", { src: "/images/fwMakerProfile.jpg" })
-	          ),
-	          _react2.default.createElement(
-	            "div",
-	            { className: "workShowcaseDescription" },
-	            "The business profile page"
-	          ),
-	          _react2.default.createElement(
-	            "h1",
+	            "h2",
 	            null,
 	            "How we ",
 	            _react2.default.createElement(
-	              "span",
-	              { className: "calloutText" },
+	              "b",
+	              null,
 	              "onboard food businesses"
 	            ),
 	            " is key to building a healthy community."
@@ -33832,6 +33857,37 @@
 	            "p",
 	            { className: "workShowcaseDescription" },
 	            "Delightful animations - a tactic to combat dropoff."
+	          ),
+	          _react2.default.createElement(
+	            "h2",
+	            null,
+	            "Having compiled the components of this atomic unit, we then ",
+	            _react2.default.createElement(
+	              "b",
+	              null,
+	              "present the food business"
+	            ),
+	            " in various ways across the product."
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "workShowcaseImage makerCard" },
+	            _react2.default.createElement("img", { src: "/images/fwMakerCard.jpg" })
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "workShowcaseDescription" },
+	            "The card, as displayed in the directory"
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "workShowcaseImage makerProfile" },
+	            _react2.default.createElement("img", { src: "/images/fwMakerProfile.jpg" })
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "workShowcaseDescription" },
+	            "The business profile page"
 	          )
 	        ),
 	        _react2.default.createElement(
@@ -33843,12 +33899,12 @@
 	            _react2.default.createElement(
 	              "h1",
 	              null,
-	              "Let's chat?"
+	              "Want to learn more?"
 	            ),
 	            _react2.default.createElement(
 	              "p",
 	              null,
-	              "Thanks so much for browsing my work. If you liked it, I'd love to hear from you."
+	              "If you're interested in working together, I'd be happy to shed more light on this work."
 	            ),
 	            _react2.default.createElement(
 	              "a",
@@ -33949,7 +34005,12 @@
 	                _react2.default.createElement(
 	                  'li',
 	                  null,
-	                  'Design Management and Strategy'
+	                  'Design Management'
+	                ),
+	                _react2.default.createElement(
+	                  'li',
+	                  null,
+	                  'Product Strategy'
 	                ),
 	                _react2.default.createElement(
 	                  'li',
@@ -34053,7 +34114,7 @@
 	          ),
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'workWrapupStatement' },
+	            { className: 'workContext workWrapupStatement' },
 	            _react2.default.createElement(
 	              'h2',
 	              null,
@@ -34161,6 +34222,11 @@
 	                  "li",
 	                  null,
 	                  "UX/UI Design"
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "Frontend development"
 	                )
 	              )
 	            )

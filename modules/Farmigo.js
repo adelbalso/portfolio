@@ -28,8 +28,8 @@ export default React.createClass({
                 <ul>
                   <li>Design Management</li>
                   <li>Product Strategy</li>
-                  <li>UX/UI Design</li>
-                  <li>User Research</li>
+                  { /* <li>UX/UI Design</li>
+                  <li>User Research</li> */ } 
                 </ul>
               </div>
             </div>
@@ -37,8 +37,37 @@ export default React.createClass({
 
           <div className="workShowcase">
 
-            <h1>The design team's top priority was finding ways to boost <span className="calloutText">average order value</span> (AOV).</h1>
-            <p className="subWorkHeader">In other words, <b>how might we encourage our customers to spend more on their Farmigo groceries each week?</b></p>
+            <div className="workContext">
+              <p>As director of design, I was responsible for building out the design team, managing our process, and of course... designing! The design team covered the following functions of Farmigo's product organization:</p>
+              <ul className="functions">
+                <li className="column-2-1">
+                  <h2 className="label">Defining product candidates</h2>
+                  <p className="description">Observing our users to identify product needs, as well as defining inventive ideas</p>
+                </li>
+                <li className="column-2-1">
+                  <h2 className="label">User research</h2>
+                  <p className="description">Monitoring user behavior and collecting feedback on ongoing design projects</p>
+                </li>
+                <li className="column-2-1">
+                  <h2 className="label">UX/UI design</h2>
+                  <p className="description">Creating everything from wireframes to mockups to interactive prototypes</p>
+                </li>
+                <li className="column-2-1">
+                  <h2 className="label">Prototyping</h2>
+                  <p className="description">Testing prototypes to better inform the build process</p>
+                </li>
+              </ul>
+
+              <h2> Here is an example of the design team's work:</h2>
+            </div>
+
+            <h1>One of the design team's top priorities was finding ways to boost <span className="calloutText">average order value</span>.</h1>
+            <h2 className="">In other words, <b>how might we encourage our customers to spend more on their Farmigo groceries each week?</b></h2>
+            <div className="subWorkHeader">
+              <img src="/images/farmigoChart.svg" />
+              <p>We identified over 20 tactics that could move that metric. In order to prioritize our efforts, we created a scoring criteria across multiple variables, which we used to build a backlog.</p>
+              <p>The following are some of the tactics we tested and implemented:</p>
+            </div>
             
             <h2><b>Tactic 1:</b> Gift with minimum purchase</h2>
             <div className="workShowcaseImage">
@@ -60,15 +89,15 @@ export default React.createClass({
             </div>
             <div className="workShowcaseDescription">We promoted targeted suggestions across the user journey, from where they land in the market through product pages and at cehckout.</div>
 
-            <div className="workContext workWrapupStatement">
-              <h2>There are just some examples of the many tactics we employed to boost AOV.</h2>
-              <p>All in all, we attempted about a dozen different tactics as part of the Design team's goal of boosting AOV.</p>
-              <img src="/images/farmigoIcon.svg" />
-            </div>
-
           </div>
 
-          <Contact />
+          <section className="calloutSection contactMe">
+            <div className="contactMeContent">
+              <h1>Want to learn more?</h1>
+              <p>If you're interested in working together, I'd be happy to shed more light on this work.</p>
+              <a className="button" href="mailto:a.delbalso@gmail.com">Say hello</a>
+            </div>
+          </section>
 
         </div>
 

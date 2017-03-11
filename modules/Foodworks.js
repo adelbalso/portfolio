@@ -38,7 +38,7 @@ export default React.createClass({
             <div className="workContext">
               <p>I joined the small and scrappy Foodworks product team early. Our goal is to build a product roadmap that supports the company's mission of helping people start food businesses. I work closely with the CTO to build our product experiments, from definition to production code.</p>
               <p>Because we are small, our process is extremely lean. We study an opportunity, whiteboard the UX, then jump straight to code. Our approach is to learn fast and iterate on the fly.</p>
-              <p>I design the UI as I build it.</p>
+              <p><b>I design the UI as I build it.</b></p>
               <img src="/images/fwMark.svg" />
               <h2> Here is an example that sheds light on our approach to product:</h2>
             </div>

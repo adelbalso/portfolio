@@ -529,6 +529,10 @@ a.button
       margin buffer*8 0 buffer*14 0
     .subWorkHeader
       margin-bottom buffer*12
+      img
+        height 70px
+        width 70px
+        margin-bottom buffer*4
     .workShowcaseImage
       display block
       margin 0 auto
@@ -556,9 +560,17 @@ a.button
     .workShowcaseDescription
       margin buffer*6 auto buffer*20 auto
       line-height 30px
-      max-width 800px   
+      max-width 800px  
     h2
-      margin-bottom buffer*8   
+      margin buffer auto buffer*8 auto
+      display block
+      max-width 800px 
+      line-height 42px
+    p
+      display block
+      max-width 800px 
+      line-height 30px
+      margin buffer*2 auto
     .animationImage
       margin buffer*12 0
     .workContext
@@ -569,12 +581,24 @@ a.button
       max-width 800px
       h2
         margin-bottom buffer*3
-      p
-        line-height 30px
-        margin buffer*2 0
       img
         max-width 100px
         margin buffer*4 0
+      ul.functions
+        margin buffer*8 0
+        li
+          margin-bottom buffer*2
+          padding buffer*2
+        .label
+          position relative
+          &:after
+            content ' '
+            background primaryColor
+            width 40px
+            height 3px
+            position absolute
+            bottom -16px
+            left calc(50% - 20px)
     .workWrapupStatement
       border-top 1px solid #eee
       border-bottom none

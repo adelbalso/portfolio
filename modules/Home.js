@@ -38,7 +38,7 @@ export default React.createClass({
                 <li>
                   <h2 className="listTitle">Frontend Development</h2>
                   <p>HTML, CSS, and just enough javascript to keep the trains moving.</p>
-                  <p>(I built this site with <span className="react"><img src="../images/react.svg" /><b>React</b></span> 💪)</p>
+                  <p>(I built this site with <span className="react"><img src="../images/react.svg" /><b>React</b></span> 💪 )</p>
                 </li>
                 <li className="last">
                   <h2 className="last listTitle">Team Management</h2>

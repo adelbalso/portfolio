@@ -707,6 +707,11 @@ a.button {
 .Work .workShowcase .subWorkHeader {
   margin-bottom: 144px;
 }
+.Work .workShowcase .subWorkHeader img {
+  height: 70px;
+  width: 70px;
+  margin-bottom: 48px;
+}
 .Work .workShowcase .workShowcaseImage {
   display: block;
   margin: 0 auto;
@@ -772,7 +777,16 @@ a.button {
   max-width: 800px;
 }
 .Work .workShowcase h2 {
-  margin-bottom: 96px;
+  margin: 12px auto 96px auto;
+  display: block;
+  max-width: 800px;
+  line-height: 42px;
+}
+.Work .workShowcase p {
+  display: block;
+  max-width: 800px;
+  line-height: 30px;
+  margin: 24px auto;
 }
 .Work .workShowcase .animationImage {
   margin: 144px 0;
@@ -787,13 +801,28 @@ a.button {
 .Work .workShowcase .workContext h2 {
   margin-bottom: 36px;
 }
-.Work .workShowcase .workContext p {
-  line-height: 30px;
-  margin: 24px 0;
-}
 .Work .workShowcase .workContext img {
   max-width: 100px;
   margin: 48px 0;
+}
+.Work .workShowcase .workContext ul.functions {
+  margin: 96px 0;
+}
+.Work .workShowcase .workContext ul.functions li {
+  margin-bottom: 24px;
+  padding: 24px;
+}
+.Work .workShowcase .workContext ul.functions .label {
+  position: relative;
+}
+.Work .workShowcase .workContext ul.functions .label:after {
+  content: ' ';
+  background: #823ce2;
+  width: 40px;
+  height: 3px;
+  position: absolute;
+  bottom: -16px;
+  left: calc(50% - 20px);
 }
 .Work .workShowcase .workWrapupStatement {
   border-top: 1px solid #eee;
