@@ -33174,7 +33174,7 @@
 	            _react2.default.createElement(
 	              'h1',
 	              null,
-	              'I am currently director of product at ',
+	              'I\'m currently director of product at ',
 	              _react2.default.createElement(
 	                'a',
 	                { target: '__blank', href: 'http://www.thefoodworks.com' },
@@ -34277,7 +34277,7 @@
 	              _react2.default.createElement(
 	                "p",
 	                { className: "secondary" },
-	                "Our mission was to create a food system that's better for everyone, from farmers to eaters. As a grocery service, the design team's challenge was to create a beautiful food experience that is enabled by the digital product."
+	                "Our mission was to help political campaigns and non-profits turn their supporters into active fundraisers an advocates, via a call tool and direct mail tool."
 	              ),
 	              _react2.default.createElement(
 	                "p",

@@ -21,7 +21,7 @@ export default React.createClass({
             <div className="titleArea">
               <div className="titleAreaContent">
                 <h1 className="workHeader">Amicus</h1>
-                <p className="secondary">Our mission was to create a food system that&#39;s better for everyone, from farmers to eaters. As a grocery service, the design team&#39;s challenge was to create a beautiful food experience that is enabled by the digital product.</p>
+                <p className="secondary">Our mission was to help political campaigns and non-profits turn their supporters into active fundraisers an advocates, via a call tool and direct mail tool.</p>
 
                 <p className="workSubtitle">Lead Designer <span className="secondary">|</span> 2012 - 2014 <span className="secondary">|</span> NYC</p>
                 <a target="__blank" href="http://www.amicushq.com">amicushq.com</a>

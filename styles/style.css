@@ -326,13 +326,12 @@ a.button:after {
 }
 .Home .whatIDoSection li:after {
   content: ' ';
-  height: 7px;
-  width: 7px;
+  height: 1px;
+  width: 30px;
   background: #651ec7;
-  border-radius: 100%;
   position: absolute;
   bottom: -30px;
-  left: 50%;
+  left: calc(50% - 15px);
 }
 .Home .whatIDoSection li.last:after {
   background: #823ce2;

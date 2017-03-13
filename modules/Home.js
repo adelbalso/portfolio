@@ -13,7 +13,7 @@ export default React.createClass({
             <div className="profileTextContent">
               <h1>Hello! I&#39;m Adrian Del Balso.</h1>
               <h1>I make <span className="calloutText">digital products</span> in Brooklyn.</h1>
-              <h1>I am currently director of product at <a target="__blank" href="http://www.thefoodworks.com">the Foodworks</a>.</h1>
+              <h1>I'm currently director of product at <a target="__blank" href="http://www.thefoodworks.com">the Foodworks</a>.</h1>
             </div>
           </div>
         </div>
